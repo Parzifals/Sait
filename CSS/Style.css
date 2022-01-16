@@ -19,7 +19,19 @@ h1,h2,h3,h4,h5,h6,p{
 	margin: 0;
 }
 
+::-webkit-scrollbar {
+    width: 0;
+}
 
+/*::-webkit-scrollbar-thumb {*/
+/*    border-radius: 10px;*/
+/*    background-color: #ff4800;*/
+/*}*/
+
+/*::-webkit-scrollbar-track {*/
+/*    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.2);*/
+/*    border-radius: 5px;*/
+/*}*/
 
 /*Panel*/
 .panel{
@@ -116,11 +128,9 @@ h1,h2,h3,h4,h5,h6,p{
 
 	width: 100%;
 	height: 100vh;
-	background-image: url('../imeges/1.jpg') ;
-	background-position: center;
-	background-repeat: no-repeat;
+	background: url('../imeges/1.jpg') center no-repeat;
 	-webkit-background-size: cover;
-	background-size: cover;
+	/*background-size: cover;*/                                                       /*ЕСЛИ ШО РАСКОМЕНТИТЬ!!!!!!!!!!*/
 }
 
 .intro__inner{
@@ -168,16 +178,19 @@ h1,h2,h3,h4,h5,h6,p{
 
 .left{
 	margin-right: 15px;
+	width: 205px;
 }
 
 .right{
 	margin-left: 15px;
+	width: 205px;
 }
 
 /* Slider */
 
 .slider{
-	margin: 100px auto 10px 0;
+	position: relative;
+	margin: 100px auto 10px auto;
 }
 
 /* Section */
